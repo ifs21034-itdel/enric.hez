@@ -1,0 +1,68 @@
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .skill {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #channels .video iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Animasi kursor yang berkedip */
+@keyframes blink-caret {
+  from, to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #f4f4f4;
+  }
+}
+
+@keyframes typing {
+  0%, 100% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+/*  */
+/* Animasi untuk progress */
+/* Animasi maju */
+@keyframes fillProgressForward {
+  0% {
+    width: 0;
+  }
+  100% {
+
+  }
+}
+
+/* Animasi mundur (reverse) */
+@keyframes fillProgressReverse {
+  0% {
+
+  }
+  100% {
+    width: 0;
+  }
+}

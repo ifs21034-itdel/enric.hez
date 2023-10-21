@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enrico | Personal Portfolio</title>
+    <link rel="icon" href="assets/img/pavicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <span class="typing-text">enric.hez </span>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+          <span class="typing-text">enric.hez </span>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toogleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toogleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/img/me.png"
+          style="border-radius: 50%"
+          alt="Enrico Hezkiel profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Enrico Hezkiel</h1>
+        <p class="section__text__p2">
+          An Intermediate Front-End Developer, App Developer, and Math
+          Enthusiast
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#about'">
+            About Me
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/img/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://id.linkedin.com/in/enrico-sirait-62389221b'"
+          />
+          <img
+            src="./assets/img/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/enric.hez'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/img/aboutimg.png"
+            alt="Profile picture"
+            width="400px"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/img/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Software Development</p>
+              <p>
+                2+ years <br />
+                Math Tutor
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/img/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.InfoTech. Bachelors Degree</p>
+              <p>Del Institute of Technologi 2021</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a tech student at Del Tech Institute. I've always loved logic
+              and math since high school, even taking part in math competitions.
+              Nowadays, I see how logic and math play a big role in the tech
+              world.
+            </p>
+          </div>
+          <div class="whatido-container">
+            <div class="details-container">
+              <h3>What I Do</h3>
+              <div class="whatido-row">
+                <div class="whatido-item1">UI Web Design</div>
+                <div class="whatido-item2">App Development</div>
+                <div class="whatido-item3">Math Tutoring</div>
+              </div>
+              <div class="whatido-row">
+                <div class="whatido-item4">Watching Movies</div>
+                <div class="whatido-item5">Travel</div>
+                <div class="whatido-item6">Reading</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Basic Programming</h3>
+                  <p>Have taken and pass the course</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL Database</h3>
+                  <p>Have taken and pass the course</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Object-Oriented Programming</h3>
+                  <p>Have taken and pass the course</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Human-Computer Interaction</h3>
+                  <p>Have taken and pass the course</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Software Engineering</h3>
+                  <p>Have taken and pass the course</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web-App Develompment</h3>
+                  <p>in progress</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Mathematics</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Calculus I</h3>
+                  <p>Lecture Assistance</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Calculus II</h3>
+                  <p>Lecture Assistance</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Probability and Statistics</h3>
+                  <p>Lecture Assistance</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>National Math Olympics</h3>
+                  <p>National Participants</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Informatics Logic</h3>
+                  <p>Freelancer tutors</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Automaton Theory</h3>
+                  <p>In progress</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">My Skills</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-container">
+        <div class="skill">
+          <h3>Procedural Programming (C)</h3>
+          <div class="progress-bar">
+            <div
+              class="progress"
+              style="width: 90%; background-color: #4caf50"
+              data-percent="90"
+            ></div>
+          </div>
+          <span>90%</span>
+        </div>
+        <div class="skill">
+          <h3>OOP Programming (Java)</h3>
+          <div class="progress-bar">
+            <div
+              class="progress"
+              style="width: 80%; background-color: #ff5722"
+              data-percent="80"
+            ></div>
+          </div>
+          <span>80%</span>
+        </div>
+        <div class="skill">
+          <h3>SQL Database</h3>
+          <div class="progress-bar">
+            <div
+              class="progress"
+              style="width: 80%; background-color: #2196f3"
+              data-percent="80"
+            ></div>
+          </div>
+          <span>80%</span>
+        </div>
+        <div class="skill">
+          <h3>Web (HTML CSS)</h3>
+          <div class="progress-bar">
+            <div
+              class="progress"
+              style="width: 70%; background-color: #9c27b0"
+              data-percent="70"
+            ></div>
+          </div>
+          <span>70%</span>
+        </div>
+        <div class="skill">
+          <h3>Machine Learning (Python)</h3>
+          <div class="progress-bar">
+            <div
+              class="progress"
+              style="width: 45%; background-color: #ffc107"
+              data-percent="45"
+            ></div>
+          </div>
+          <span>45%</span>
+        </div>
+      </div>
+      <img
+        src="./assets/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/img/calculator.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Simple Calculator
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ifs21034-itdel/AppKalkulator.git'"
+              >
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn1">Description</button>
+              <div class="modal1 hidden">
+                <button class="close-modal1">&times;</button>
+                <h1>Simple Calculator</h1>
+                <br /><br />
+                <p>
+                  Kalkulator ini mendukung empat operasi matematika dasar:
+                  penjumlahan, pengurangan, perkalian, dan pembagian. Pengguna
+                  dapat dengan mudah memasukkan angka dan operator untuk
+                  melakukan perhitungan.
+                </p>
+                <br />
+                <p>
+                  Proyek ini adalah implementasi sederhana dari kalkulator dalam
+                  bahasa C dan juga yang memiliki interface dengan Java
+                  Netbeans.
+                </p>
+              </div>
+              <div class="overlay hidden"></div>
+            </div>
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/img/myazik.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              My AzIK Application
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ifs21034-itdel/aplikasi-myAzik1'"
+              >
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn2">Description</button>
+              <div class="modal2 hidden">
+                <button class="close-modal2">&times;</button>
+                <h1>My AzIK application</h1>
+                <br /><br />
+                <p>
+                  Kalkulator ini mendukung empat operasi matematika dasar:
+                  penjumlahan, pengurangan, perkalian, dan pembagian. Pengguna
+                  dapat dengan mudah memasukkan angka dan operator untuk
+                  melakukan perhitungan.
+                </p>
+                <br />
+                <p>
+                  Proyek ini adalah implementasi sederhana dari kalkulator dalam
+                  bahasa C dan juga yang memiliki interface dengan Java
+                  Netbeans.
+                </p>
+              </div>
+              <div class="overlay hidden"></div>
+            </div>
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/img/olis.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              UI Re-Design OLIS IT Del
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.figma.com/file/b2Bf7zKLTFWytOjUky4Nmp/11S21034-Website-Perpustakaan-IT-Del?type=design&node-id=0%3A1&mode=design&t=6nK3269nKFE8wOhF-1'"
+              >
+                Figma
+              </button>
+              <button class="btn btn-color-2 project-btn3">Description</button>
+              <div class="modal3 hidden">
+                <button class="close-modal3">&times;</button>
+                <h1>Online Information System (OLIS)</h1>
+                <br /><br />
+                <p>
+                  Mendesain ulang Website perpustakaan Institut Teknologi Del
+                  (OLIS) dengan figma
+                </p>
+                <br />
+                <p>
+                  Website perpustakaan Institut Teknologi Del sudah kalah jauh
+                  dengan perpustakaan kampus lain. Sehingga untuk proyek UTS
+                  mata kuliah Interaksi Manusia-Komputer, saya ditugaskan untuk
+                  merancang ulang tampilan antarmuka website sistem informasi
+                  perpustakaan kampus
+                </p>
+              </div>
+              <div class="overlay hidden"></div>
+            </div>
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/img/delacid.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              UI Re-Design Website IT Del
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.figma.com/file/b2Bf7zKLTFWytOjUky4Nmp/11S21034-Website-Perpustakaan-IT-Del?type=design&node-id=0%3A1&mode=design&t=6nK3269nKFE8wOhF-1'"
+              >
+                Figma
+              </button>
+              <button class="btn btn-color-2 project-btn4">Description</button>
+              <div class="modal4 hidden">
+                <button class="close-modal4">&times;</button>
+                <h1>Online Information System (OLIS)</h1>
+                <br /><br />
+                <p>
+                  Mendesain ulang Website perpustakaan Institut Teknologi Del
+                  (OLIS) dengan figma
+                </p>
+                <br />
+                <p>
+                  Website perpustakaan Institut Teknologi Del sudah kalah jauh
+                  dengan perpustakaan kampus lain. Sehingga untuk proyek UTS
+                  mata kuliah Interaksi Manusia-Komputer, saya ditugaskan untuk
+                  merancang ulang tampilan antarmuka website sistem informasi
+                  perpustakaan kampus
+                </p>
+              </div>
+              <div class="overlay hidden"></div>
+            </div>
+          </div>
+          <div class="project-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/img/dbms-is.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Asrama Information System
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.figma.com/file/b2Bf7zKLTFWytOjUky4Nmp/11S21034-Website-Perpustakaan-IT-Del?type=design&node-id=0%3A1&mode=design&t=6nK3269nKFE8wOhF-1'"
+              >
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn5">Description</button>
+              <div class="modal5 hidden">
+                <button class="close-modal5">&times;</button>
+                <h1>Asrama Information System</h1>
+                <br /><br />
+                <p>
+                  Mendesain ulang Website perpustakaan Institut Teknologi Del
+                  (OLIS) dengan figma
+                </p>
+                <br />
+                <p>
+                  Website perpustakaan Institut Teknologi Del sudah kalah jauh
+                  dengan perpustakaan kampus lain. Sehingga untuk proyek UTS
+                  mata kuliah Interaksi Manusia-Komputer, saya ditugaskan untuk
+                  merancang ulang tampilan antarmuka website sistem informasi
+                  perpustakaan kampus
+                </p>
+              </div>
+              <div class="overlay hidden"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#channels'"
+      />
+    </section>
+    <section id="channels">
+      <div class="section-container">
+        <h2 class="title">Channels</h2>
+        <div class="video-container">
+          <div class="video">
+            <iframe
+              width="300"
+              height="200"
+              src="https://www.youtube.com/embed/soACWheaBtk?si=mDhgny2feFmE_iQq"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 class="video-title">Menggambarkan grafik</h3>
+          </div>
+
+          <div class="video">
+            <iframe
+              width="300"
+              height="200"
+              src="https://www.youtube.com/embed/ASd3BxOAXMc?si=QhmF7YqJq31ZKDmL"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 class="video-title">First Order Logic</h3>
+          </div>
+
+          <div class="video">
+            <iframe
+              width="300"
+              height="200"
+              src="https://www.youtube.com/embed/naFAzdNpmZ4?si=KWtDfaNK0oJqbZMD"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 class="video-title">Development MyAzIK-App</h3>
+          </div>
+
+          <div class="video">
+            <iframe
+              width="300"
+              height="200"
+              src="https://www.youtube.com/embed/CfSxkCqBFDw?si=1Y3oGmR7z4y7RRRE"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 class="video-title">Volume Benda Putar</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="certificates">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Certificates</h1>
+      <div class="slider-container">
+        <div class="slider">
+          <div class="controls">
+            <button class="prev-btn" onclick="prevSlide()">&#8593;</button>
+            <button class="next-btn" onclick="nextSlide()">&#8595;</button>
+          </div>
+          <!-- Certificate 1 -->
+          <div class="certificate">
+            <img
+              src="./assets/img/serifikatjava.jpg"
+              alt="Certificate 1"
+              class="certificate-img"
+            />
+            <h2 class="experience-sub-title certificate-title">
+              Sertifikasi Java
+            </h2>
+            <div class="btn-container">
+              <a
+                href="./assets/sertifikat_course_Java.pdf"
+                download
+                class="btn btn-color-2 certificate-btn"
+              >
+                Download Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Certificate 2 -->
+          <div class="certificate">
+            <img
+              src="./assets/img/sertifikatvisualisasi.jpg"
+              alt="Certificate 2"
+              class="certificate-img"
+            />
+            <h2 class="experience-sub-title certificate-title">
+              Sertifikasi Visualisasi Data
+            </h2>
+            <div class="btn-container">
+              <a
+                href="./assets/sertifikat_course_Visualisasi-Data.pdf"
+                download
+                class="btn btn-color-2 certificate-btn"
+              >
+                Download Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Certificate 3 -->
+          <div class="certificate">
+            <img
+              src="./assets/img/sertifikatmanajemen.jpg"
+              alt="Certificate 3"
+              class="certificate-img"
+            />
+            <h2 class="experience-sub-title certificate-title">
+              Sertifikasi Manajemen Proyek
+            </h2>
+            <div class="btn-container">
+              <a
+                href="./assets/sertifikat_course_Proyek-Manajemen.pdf"
+                download
+                class="btn btn-color-2 certificate-btn"
+              >
+                Download Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Certificate 4 -->
+          <div class="certificate">
+            <img
+              src="./assets/img/sertifikatmate.jpg"
+              alt="Certificate 2"
+              class="certificate-img"
+            />
+            <h2 class="experience-sub-title certificate-title">
+              Sertifikasi Olimpiade
+            </h2>
+            <div class="btn-container">
+              <a
+                href="./assets/sertifikat-matematika.pdf"
+                download
+                class="btn btn-color-2 certificate-btn"
+              >
+                Download Certificate
+              </a>
+            </div>
+          </div>
+
+          <!-- Certificate 5 -->
+          <div class="certificate">
+            <img
+              src="./assets/img/sertifikatbem.jpg"
+              alt="Certificate 2"
+              class="certificate-img"
+            />
+            <h2 class="experience-sub-title certificate-title">
+              Sertifikasi Organisasi BEM
+            </h2>
+            <div class="btn-container">
+              <a
+                href="./assets/img/sertifikatbem.jpg"
+                download
+                class="btn btn-color-2 certificate-btn"
+              >
+                Download Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/img/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a class="a-contact" href="mailto:ifs21034@students.del.ac.id"
+              >ifs21034@students.del.ac.id</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/img/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a class="a-contact" href="#">+62 813-1638-0009</a></p>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="" method="POST">
+          <div class="form-group">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">No Telepon:</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+          <div class="form-group">
+            <label for="feedback">Feedback/Saran:</label>
+            <textarea
+              id="feedback"
+              name="feedback"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-color-1">Submit</button>
+        </form>
+      </div>
+    </section>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
